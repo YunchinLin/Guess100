@@ -1,5 +1,6 @@
 package bess.com.guess100;
 
+import android.content.Intent;
 import android.icu.text.IDNA;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -52,5 +53,11 @@ public class MainActivity extends AppCompatActivity {
                     .setPositiveButton("OK", null)
                     .show();
         }
+    }
+
+    public void again (View view){
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
     }
 }
