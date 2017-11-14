@@ -1,5 +1,6 @@
 package bess.com.guess100;
 
+import android.icu.text.IDNA;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView Secret = (TextView)findViewById(R.id.secret);
         Secret.setText(Integer.toString(r));
+//        TextView Info = (TextView)findViewById(R.id.info);
+//        EditText Number = (EditText)findViewById(R.id.number);
+//        Button Send = (Button)findViewById(R.id.send);
+//        findViews(Secret);
+//        findViews(Info);
+//        findViews(Number);
+//        findViews(Send);
     }
 
     public void findViews(View view){
